@@ -22,49 +22,98 @@
        LOGIN PAGE OVERLAY
        ========================================== -->
   <div id="login-screen" class="login-screen">
-    <div class="login-card">
-      <div class="login-header">
-        <div class="login-logo">
-          <i class="fas fa-cubes"></i>
-          <span class="logo-text">Acadeno CRM</span>
-        </div>
-        <p class="login-subtitle">Marketing Team Portal Access</p>
-      </div>
-
-      <div class="login-demo-hint">
-        <i class="fas fa-info-circle" style="color: var(--accent-purple); margin-right: 6px;"></i>
-        Demo Credentials:<br>
-        Email: <code>executive@demo.com</code><br>
-        Password: <code>password123</code>
-      </div>
-
-      <div id="login-error-container" class="login-error hidden"></div>
-
-      <form id="login-form">
-        <div class="form-group">
-          <label for="login-email">Email Address</label>
-          <div class="input-wrapper">
-            <i class="fas fa-envelope"></i>
-            <input type="email" id="login-email" class="form-input" placeholder="you@acadeno.com" required value="executive@demo.com">
+    <div class="login-container">
+      <!-- Left side visual pane -->
+      <div class="login-visual-pane">
+        <div class="login-visual-content">
+          <div class="visual-logo">
+            <i class="fas fa-cubes"></i>
+            <span>Acadeno CRM</span>
+          </div>
+          <h1>Empower Your Marketing Team</h1>
+          <p class="visual-desc">Streamline college visits, follow-up calls, and automated WhatsApp outreach in one secure team portal.</p>
+          
+          <!-- Mock stats card inside visual pane -->
+          <div class="visual-stat-card">
+            <div class="stat-row">
+              <div>
+                <span class="stat-number">1,240+</span>
+                <span class="stat-label">Leads Processed</span>
+              </div>
+              <div>
+                <span class="stat-number">98.5%</span>
+                <span class="stat-label">Conversion Rate</span>
+              </div>
+            </div>
+            <div class="stat-progress-bar">
+              <div class="stat-progress-fill"></div>
+            </div>
+            <div class="stat-card-footer">
+              <i class="fas fa-chart-line"></i> Today's activity is 24% higher than last week
+            </div>
           </div>
         </div>
+      </div>
+      
+      <!-- Right side form pane -->
+      <div class="login-form-pane">
+        <div class="login-card">
+          <div class="login-header">
+            <h2>Welcome back</h2>
+            <p class="login-subtitle">Sign in to access your executive workspace</p>
+          </div>
 
-        <div class="form-group">
-          <label for="login-password">Password</label>
-          <div class="input-wrapper">
-            <i class="fas fa-lock"></i>
-            <input type="password" id="login-password" class="form-input" placeholder="••••••••" required value="password123">
-            <button type="button" id="toggle-password-btn" class="password-toggle">
-              <i id="pwd-toggle-icon" class="fas fa-eye"></i>
+          <div class="login-demo-hint">
+            <i class="fas fa-info-circle" style="color: var(--accent-purple); margin-right: 6px;"></i>
+            Demo Credentials:<br>
+            Email: <code>executive@demo.com</code><br>
+            Password: <code>password123</code>
+          </div>
+
+          <div id="login-error-container" class="login-error hidden"></div>
+
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-email">Email Address</label>
+              <div class="input-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="login-email" class="form-input" placeholder="you@acadeno.com" required value="executive@demo.com">
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 12px;">
+              <label for="login-password">Password</label>
+              <div class="input-wrapper">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="login-password" class="form-input" placeholder="••••••••" required value="password123">
+                <button type="button" id="toggle-password-btn" class="password-toggle">
+                  <i id="pwd-toggle-icon" class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-size: 13px;">
+              <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text-muted);">
+                <input type="checkbox" checked style="accent-color: var(--accent-purple);"> Remember me
+              </label>
+              <a href="#" style="color: var(--accent-purple); text-decoration: none; font-weight: 600;" onclick="showToast('Password reset link simulated', 'info')">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-btn" style="margin-bottom: 20px;">
+              <span>Sign In</span>
+              <i class="fas fa-arrow-right"></i>
             </button>
+          </form>
+          
+          <div style="text-align: center; font-size: 13px; color: var(--text-muted);">
+            Don't have an account? <a href="#" style="color: var(--accent-purple); text-decoration: none; font-weight: 600;" onclick="showToast('Please contact administrator to register a new user.', 'info')">Sign Up</a>
+          </div>
+          
+          <div style="text-align: center; font-size: 11px; color: var(--text-muted); margin-top: 32px; border-top: 1px solid var(--glass-border); padding-top: 16px;">
+            Secure access for marketing professionals
           </div>
         </div>
-
-        <button type="submit" class="login-btn">
-          <span>Sign In</span>
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </form>
+      </div>
     </div>
   </div>
 
