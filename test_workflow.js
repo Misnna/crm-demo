@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 async function testWorkflow() {
-  console.log("Starting local automated CRM tests...");
+  console.log("Starting local automated Finscript CRM tests...");
   
   // Launch Playwright headless chrome browser
   const browser = await chromium.launch({
@@ -22,13 +22,13 @@ async function testWorkflow() {
   // 1. Verify Page Title
   console.log("Checking page title...");
   const title = await page.title();
-  if (title !== "Acadeno CRM - Marketing Team Portal") {
+  if (title !== "Finscript - Business Consultancy CRM") {
     throw new Error(`Invalid page title: "${title}"`);
   }
   console.log("✓ Page title is correct.");
   
   // 2. Verify Login Overlay is visible and fails on invalid login
-  console.log("Verifying login form exists...");
+  console.log("Verifying login screen exists...");
   const loginFormVisible = await page.isVisible('#login-screen');
   if (!loginFormVisible) {
     throw new Error("Login screen is not visible on load.");
@@ -65,9 +65,9 @@ async function testWorkflow() {
   
   // 4. Verify Metrics and Navigation
   console.log("Testing dashboard metrics values...");
-  const callsCount = await page.innerText('#metric-calls');
-  const visitsCount = await page.innerText('#metric-visits');
-  console.log(`✓ Dashboard loaded. Calls: ${callsCount}, Visits: ${visitsCount}`);
+  const activeLeadsCount = await page.innerText('#metric-leads');
+  const openDealsCount = await page.innerText('#metric-deals');
+  console.log(`✓ Dashboard loaded. Active Leads: ${activeLeadsCount}, Open Deals: ${openDealsCount}`);
   
   // 5. Navigate to Leads
   console.log("Navigating to Leads & Enquiries tab...");
@@ -101,24 +101,27 @@ async function testWorkflow() {
   console.log("✓ Real-time search filter verified successfully in leads grid container.");
   
   // 7. Add a new Lead
-  console.log("Navigating to Add Lead Form...");
-  await page.click('.nav-item[data-module="add-lead"]');
+  console.log("Toggling Add Lead Form...");
+  // Clear search query so new lead is visible later
+  await page.fill('#leads-search', '');
+  await page.click('button:has-text("Add New Lead")');
   await page.waitForTimeout(500);
   
   console.log("Submitting new lead form...");
   await page.fill('#al-name', 'Test Automator');
-  await page.fill('#al-phone', '+91 99999 11111');
-  await page.fill('#al-email', 'test.auto@email.com');
-  await page.fill('#al-college', 'Stanford University');
-  await page.selectOption('#al-course', 'AI / Machine Learning');
-  await page.selectOption('#al-source', 'College Visit');
+  await page.fill('#al-company', 'Stanford Consulting Group');
+  await page.fill('#al-location', 'California, USA');
+  await page.fill('#al-phone', '+1 555 0199');
+  await page.fill('#al-email', 'test.auto@stanford.edu');
+  await page.selectOption('#al-industry', 'Consulting');
+  await page.selectOption('#al-business-type', 'Private Limited');
   await page.fill('#al-notes', 'This is an automated test lead.');
-  await page.click('.switch:has(#al-hot)'); // Toggle hot lead switch by clicking the visible wrapper
+  await page.click('.switch:has(#al-hot)'); // Toggle hot lead switch
   await page.click('#add-lead-form button[type="submit"]');
   
   await page.waitForTimeout(1000);
   
-  // Redirects to leads. Verify new lead card is visible.
+  // Verify new lead card is visible.
   console.log("Checking if new lead exists in Leads tab...");
   await page.fill('#leads-search', 'Test Automator');
   await page.waitForTimeout(500);

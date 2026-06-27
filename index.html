@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acadeno CRM - Marketing Team Portal</title>
+  <title>Finscript - Business Consultancy CRM</title>
   <!-- SEO Tags -->
-  <meta name="description" content="Secure and responsive marketing team portal for managing CRM leads, college visits, follow-up calls, tasks, and WhatsApp broadcast campaigns.">
+  <meta name="description" content="Finscript Business Consultants Private Limited portal. Manage leads, accounts, contacts, deals, service requirements, tasks, quotes, invoices, payments, deliveries, support, and dynamic analytics reports.">
   
   <!-- FontAwesome Icons & Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,29 +27,29 @@
       <div class="login-visual-pane">
         <div class="login-visual-content">
           <div class="visual-logo">
-            <i class="fas fa-cubes"></i>
-            <span>Acadeno CRM</span>
+            <i class="fas fa-briefcase"></i>
+            <span>Finscript</span>
           </div>
-          <h1>Empower Your Marketing Team</h1>
-          <p class="visual-desc">Streamline college visits, follow-up calls, and automated WhatsApp outreach in one secure team portal.</p>
+          <h1>Business Consultancy Hub</h1>
+          <p class="visual-desc">Streamline client onboarding, company registrations, compliance audits, quotes, invoices, delivery checkpoints, and customer support in one unified executive workspace.</p>
           
           <!-- Mock stats card inside visual pane -->
           <div class="visual-stat-card">
             <div class="stat-row">
               <div>
-                <span class="stat-number">1,240+</span>
-                <span class="stat-label">Leads Processed</span>
+                <span class="stat-number">$148,500</span>
+                <span class="stat-label">Active Deal Pipeline</span>
               </div>
               <div>
-                <span class="stat-number">98.5%</span>
-                <span class="stat-label">Conversion Rate</span>
+                <span class="stat-number">92.4%</span>
+                <span class="stat-label">Delivery Success</span>
               </div>
             </div>
             <div class="stat-progress-bar">
-              <div class="stat-progress-fill"></div>
+              <div class="stat-progress-fill" style="width: 92%;"></div>
             </div>
             <div class="stat-card-footer">
-              <i class="fas fa-chart-line"></i> Today's activity is 24% higher than last week
+              <i class="fas fa-check-circle"></i> 14 Compliance filings completed this week
             </div>
           </div>
         </div>
@@ -59,8 +59,8 @@
       <div class="login-form-pane">
         <div class="login-card">
           <div class="login-header">
-            <h2>Welcome back</h2>
-            <p class="login-subtitle">Sign in to access your executive workspace</p>
+            <h2>Sign In</h2>
+            <p class="login-subtitle">Access the Business Consultancy Management Console</p>
           </div>
 
           <div class="login-demo-hint">
@@ -77,7 +77,7 @@
               <label for="login-email">Email Address</label>
               <div class="input-wrapper">
                 <i class="fas fa-envelope"></i>
-                <input type="email" id="login-email" class="form-input" placeholder="you@acadeno.com" required value="executive@demo.com">
+                <input type="email" id="login-email" class="form-input" placeholder="you@consultancy.com" required value="executive@demo.com">
               </div>
             </div>
 
@@ -96,21 +96,17 @@
               <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text-muted);">
                 <input type="checkbox" checked style="accent-color: var(--accent-purple);"> Remember me
               </label>
-              <a href="#" style="color: var(--accent-purple); text-decoration: none; font-weight: 600;" onclick="showToast('Password reset link simulated', 'info')">Forgot Password?</a>
+              <a href="#" style="color: var(--accent-purple); text-decoration: none; font-weight: 600;" onclick="showToast('Password reset simulation triggered', 'info')">Forgot Password?</a>
             </div>
 
             <button type="submit" class="login-btn" style="margin-bottom: 20px;">
-              <span>Sign In</span>
+              <span>Authenticate</span>
               <i class="fas fa-arrow-right"></i>
             </button>
           </form>
           
           <div style="text-align: center; font-size: 13px; color: var(--text-muted);">
-            Don't have an account? <a href="#" style="color: var(--accent-purple); text-decoration: none; font-weight: 600;" onclick="showToast('Please contact administrator to register a new user.', 'info')">Sign Up</a>
-          </div>
-          
-          <div style="text-align: center; font-size: 11px; color: var(--text-muted); margin-top: 32px; border-top: 1px solid var(--glass-border); padding-top: 16px;">
-            Secure access for marketing professionals
+            Need access? <a href="#" style="color: var(--accent-purple); text-decoration: none; font-weight: 600;" onclick="showToast('Contact CRM Admin to register.', 'info')">Request Account</a>
           </div>
         </div>
       </div>
@@ -125,58 +121,84 @@
     <!-- LEFT SIDEBAR -->
     <aside id="sidebar" class="sidebar">
       <div class="sidebar-logo">
-        <i class="fas fa-cubes"></i>
-        <span class="logo-text">Acadeno</span>
-        <span class="logo-badge">PORTAL</span>
+        <i class="fas fa-briefcase"></i>
+        <span class="logo-text">Finscript</span>
+        <span class="logo-badge">CONSULTANCY</span>
       </div>
 
       <nav class="sidebar-nav">
-        <div class="nav-section-title">Core Modules</div>
+        <div class="nav-section-title">Overview</div>
         <div class="nav-item active" data-module="dashboard">
-          <i class="fas fa-chart-line"></i>
+          <i class="fas fa-chart-pie"></i>
           <span>Dashboard</span>
         </div>
+
+        <div class="nav-section-title">Sales Pipeline</div>
         <div class="nav-item" data-module="leads">
-          <i class="fas fa-users-cog"></i>
+          <i class="fas fa-user-friends"></i>
           <span>Leads & Enquiries</span>
         </div>
-
-        <div class="nav-section-title" style="margin-top: 20px;">Forms & Actions</div>
-        <div class="nav-item" data-module="add-lead">
-          <i class="fas fa-user-plus"></i>
-          <span>Add Lead</span>
+        <div class="nav-item" data-module="accounts">
+          <i class="fas fa-city"></i>
+          <span>Accounts (Companies)</span>
         </div>
-        <div class="nav-item" data-module="add-visit">
-          <i class="fas fa-map-marked-alt"></i>
-          <span>Log Visit</span>
+        <div class="nav-item" data-module="contacts">
+          <i class="fas fa-address-book"></i>
+          <span>Contacts (People)</span>
         </div>
-        <div class="nav-item" data-module="follow-up">
-          <i class="fas fa-phone-volume"></i>
-          <span>Schedule Follow-up</span>
-        </div>
-        <div class="nav-item" data-module="tasks">
-          <i class="fas fa-tasks"></i>
-          <span>CRM Tasks</span>
+        <div class="nav-item" data-module="deals">
+          <i class="fas fa-handshake"></i>
+          <span>Deals (Opportunities)</span>
         </div>
 
-        <div class="nav-section-title" style="margin-top: 20px;">Campaigns</div>
-        <div class="nav-item" data-module="whatsapp">
-          <i class="fab fa-whatsapp"></i>
-          <span>WhatsApp Campaign</span>
+        <div class="nav-section-title">Consulting Operations</div>
+        <div class="nav-item" data-module="service-requirements">
+          <i class="fas fa-clipboard-list"></i>
+          <span>Service Requirements</span>
+        </div>
+        <div class="nav-item" data-module="tasks-activities">
+          <i class="fas fa-calendar-check"></i>
+          <span>Tasks & Activities</span>
+        </div>
+        <div class="nav-item" data-module="quotes">
+          <i class="fas fa-file-invoice-dollar"></i>
+          <span>Quotes</span>
         </div>
 
-        <div class="nav-section-title" style="margin-top: 20px;">Management</div>
+        <div class="nav-section-title">Billing & Delivery</div>
+        <div class="nav-item" data-module="invoices">
+          <i class="fas fa-file-invoice"></i>
+          <span>Invoices</span>
+        </div>
+        <div class="nav-item" data-module="payments">
+          <i class="fas fa-receipt"></i>
+          <span>Payments</span>
+        </div>
+        <div class="nav-item" data-module="service-delivery">
+          <i class="fas fa-shipping-fast"></i>
+          <span>Service Delivery</span>
+        </div>
+        <div class="nav-item" data-module="support">
+          <i class="fas fa-headset"></i>
+          <span>Customer Support</span>
+        </div>
+
+        <div class="nav-section-title">Management</div>
+        <div class="nav-item" data-module="reports">
+          <i class="fas fa-chart-line"></i>
+          <span>Reports & Dashboard</span>
+        </div>
         <div class="nav-item" data-module="admin">
           <i class="fas fa-user-shield"></i>
-          <span>Admin Panel</span>
+          <span>System Users</span>
         </div>
       </nav>
 
       <div class="sidebar-footer">
-        <div id="avatar-text" class="user-avatar">RS</div>
+        <div id="avatar-text" class="user-avatar">EX</div>
         <div class="user-info">
           <div id="username-display" class="user-name">Rahul Sharma</div>
-          <div id="user-role-display" class="user-role">Marketing Executive</div>
+          <div id="user-role-display" class="user-role">Managing Director</div>
         </div>
         <button id="logout-btn" class="logout-btn" title="Sign Out">
           <i class="fas fa-sign-out-alt"></i>
@@ -192,7 +214,7 @@
           <button id="sidebar-toggle" class="sidebar-toggle-btn">
             <i class="fas fa-bars"></i>
           </button>
-          <h2 id="current-section-title">Dashboard Overview</h2>
+          <h2 id="current-section-title">Dashboard</h2>
         </div>
         
         <div class="header-actions">
@@ -201,10 +223,10 @@
           </button>
           
           <div class="notification-badge-container">
-            <button class="theme-toggle-btn" title="Notifications">
+            <button class="theme-toggle-btn" title="Notifications" onclick="showToast('No new notifications.', 'info')">
               <i class="fas fa-bell"></i>
             </button>
-            <span class="notification-badge">3</span>
+            <span class="notification-badge">5</span>
           </div>
         </div>
       </header>
@@ -217,9 +239,9 @@
              ========================================== -->
         <section id="dashboard-section" class="module-section">
           <div class="dashboard-alert-banner">
-            <i class="fas fa-trophy"></i>
+            <i class="fas fa-award"></i>
             <div>
-              <strong>Great work!</strong> You're above target for today. Check your hot leads queue below.
+              <strong>Sales Target Alert!</strong> The consultancy converted $45,000 worth of contracts this month. Ensure all GST and Company Registrations are mapped under step 6.
             </div>
           </div>
 
@@ -227,81 +249,93 @@
           <div class="metrics-grid">
             <div class="metric-card">
               <div>
-                <div class="metric-label">Today's Calls</div>
-                <div id="metric-calls" class="metric-value">14</div>
+                <div class="metric-label">Active Leads</div>
+                <div id="metric-leads" class="metric-value">12</div>
                 <div class="metric-change positive">
                   <i class="fas fa-arrow-up"></i>
-                  <span>+12% vs yest.</span>
+                  <span>Step 1 Enquiries</span>
                 </div>
               </div>
-              <div class="metric-icon calls">
-                <i class="fas fa-phone-alt"></i>
+              <div class="metric-icon leads">
+                <i class="fas fa-user-friends"></i>
               </div>
             </div>
             
             <div class="metric-card">
               <div>
-                <div class="metric-label">Visits Done</div>
-                <div id="metric-visits" class="metric-value">3</div>
+                <div class="metric-label">Open Deals</div>
+                <div id="metric-deals" class="metric-value">8</div>
                 <div class="metric-change positive">
-                  <i class="fas fa-arrow-up"></i>
-                  <span>Target Met</span>
+                  <i class="fas fa-chart-line"></i>
+                  <span>Step 5 Pipelines</span>
                 </div>
               </div>
-              <div class="metric-icon visits">
-                <i class="fas fa-map-marker-alt"></i>
+              <div class="metric-icon visits" style="background: rgba(124, 58, 237, 0.15); color: var(--accent-purple);">
+                <i class="fas fa-handshake"></i>
               </div>
             </div>
 
             <div class="metric-card">
               <div>
-                <div class="metric-label">Hot Leads</div>
-                <div id="metric-hot-leads" class="metric-value">8</div>
+                <div class="metric-label">Collected Revenue</div>
+                <div id="metric-revenue" class="metric-value">$85,200</div>
                 <div class="metric-change positive">
-                  <i class="fas fa-fire" style="color: #ef4444;"></i>
-                  <span>High priority</span>
+                  <i class="fas fa-wallet" style="color: var(--status-converted);"></i>
+                  <span>Step 11 Paid</span>
                 </div>
               </div>
-              <div class="metric-icon leads">
-                <i class="fas fa-fire"></i>
+              <div class="metric-icon leads" style="background: rgba(16, 185, 129, 0.15); color: var(--status-converted);">
+                <i class="fas fa-dollar-sign"></i>
               </div>
             </div>
 
             <div class="metric-card">
               <div>
-                <div class="metric-label">Pending Follow-ups</div>
-                <div id="metric-followups" class="metric-value">5</div>
+                <div class="metric-label">Support Tickets</div>
+                <div id="metric-tickets" class="metric-value">3</div>
                 <div class="metric-change negative">
-                  <i class="fas fa-clock"></i>
-                  <span>Needs action</span>
+                  <i class="fas fa-life-ring"></i>
+                  <span>Step 13 Actions</span>
                 </div>
               </div>
-              <div class="metric-icon followups">
-                <i class="fas fa-calendar-alt"></i>
+              <div class="metric-icon followups" style="background: rgba(239, 68, 68, 0.15); color: #ef4444;">
+                <i class="fas fa-headset"></i>
               </div>
             </div>
           </div>
 
-          <!-- Quick Action Bar -->
-          <div class="quick-actions-panel">
-            <h3 style="font-size: 15px; margin-bottom: 16px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Quick Shortcuts</h3>
-            <div class="quick-actions-grid">
-              <div id="qa-add-lead" class="quick-action-btn">
-                <i class="fas fa-user-plus"></i>
-                <span>Add Lead</span>
-              </div>
-              <div id="qa-add-visit" class="quick-action-btn">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Add Visit</span>
-              </div>
-              <div id="qa-whatsapp" class="quick-action-btn">
-                <i class="fab fa-whatsapp"></i>
-                <span>WhatsApp Blast</span>
-              </div>
-              <div id="qa-admin" class="quick-action-btn">
-                <i class="fas fa-shield-alt"></i>
-                <span>Admin Panel</span>
-              </div>
+          <!-- Quick Shortcuts Dashboard -->
+          <div class="quick-actions-panel" style="margin-bottom: 32px;">
+            <h3 style="font-size: 14px; margin-bottom: 16px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Consultancy Operational Shortcuts</h3>
+            <div class="quick-actions-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+              <button onclick="switchModule('leads'); showLeadForm();" class="quick-action-btn" style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--border-radius-lg); color: var(--text-main); display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; transition: var(--transition-smooth);">
+                <i class="fas fa-user-plus" style="color: var(--status-new);"></i>
+                <div>
+                  <h4 style="font-size:14px;">1. Add Lead</h4>
+                  <p style="font-size:11px; color:var(--text-muted);">Capture new corporate enquiry</p>
+                </div>
+              </button>
+              <button onclick="switchModule('quotes'); showQuoteForm();" class="quick-action-btn" style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--border-radius-lg); color: var(--text-main); display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; transition: var(--transition-smooth);">
+                <i class="fas fa-file-invoice-dollar" style="color: var(--accent-purple);"></i>
+                <div>
+                  <h4 style="font-size:14px;">8. Create Quote</h4>
+                  <p style="font-size:11px; color:var(--text-muted);">Draft consultancy estimation</p>
+                </div>
+              </button>
+              <button onclick="switchModule('invoices'); showInvoiceForm();" class="quick-action-btn" style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--border-radius-lg); color: var(--text-main); display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; transition: var(--transition-smooth);">
+                <i class="fas fa-file-invoice" style="color: var(--status-contacted);"></i>
+                <div>
+                  <h4 style="font-size:14px;">10. Issue Invoice</h4>
+                  <p style="font-size:11px; color:var(--text-muted);">Generate billing statement</p>
+                </div>
+              </button>
+              <button onclick="switchModule('support'); showSupportForm();" class="quick-action-btn" style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: var(--border-radius-lg); color: var(--text-main); display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; transition: var(--transition-smooth);">
+                <i class="fas fa-headset" style="color: #ef4444;"></i>
+                <div>
+                  <h4 style="font-size:14px;">13. Log Ticket</h4>
+                  <p style="font-size:11px; color:var(--text-muted);">Register support request</p>
+                </div>
+              </button>
             </div>
           </div>
 
@@ -309,17 +343,16 @@
           <div class="dashboard-grid">
             <div class="dashboard-panel">
               <div class="panel-header">
-                <h3 class="panel-title"><i class="fas fa-chart-bar" style="color: var(--accent-blue);"></i> Performance Overview</h3>
+                <h3 class="panel-title"><i class="fas fa-chart-bar" style="color: var(--accent-blue);"></i> Monthly Sales Pipeline Overview</h3>
               </div>
-              <div class="chart-container">
+              <div class="chart-container" style="height: 300px; position: relative;">
                 <canvas id="performanceChart"></canvas>
               </div>
             </div>
 
             <div class="dashboard-panel">
               <div class="panel-header">
-                <h3 class="panel-title"><i class="fas fa-fire" style="color: #ef4444;"></i> Hot Leads Queue</h3>
-                <button id="view-all-hot-leads" class="view-all-btn">View All</button>
+                <h3 class="panel-title"><i class="fas fa-fire" style="color: #ef4444;"></i> Priority Leads (Step 1)</h3>
               </div>
               <div id="dashboard-hot-leads" class="hot-leads-list">
                 <!-- Injected dynamically -->
@@ -328,18 +361,18 @@
 
             <div class="dashboard-panel">
               <div class="panel-header">
-                <h3 class="panel-title"><i class="fas fa-history" style="color: var(--accent-purple);"></i> Recent Activity Feed</h3>
+                <h3 class="panel-title"><i class="fas fa-shipping-fast" style="color: var(--accent-purple);"></i> Delivery Status Tracker (Step 12)</h3>
               </div>
-              <div id="dashboard-activities" class="activity-feed">
+              <div id="dashboard-deliveries-list" style="display:flex; flex-direction:column; gap:12px;">
                 <!-- Injected dynamically -->
               </div>
             </div>
 
             <div class="dashboard-panel">
               <div class="panel-header">
-                <h3 class="panel-title"><i class="fas fa-chart-pie" style="color: var(--status-converted);"></i> Lead Status Distribution</h3>
+                <h3 class="panel-title"><i class="fas fa-chart-pie" style="color: var(--status-converted);"></i> Deal Stages Distribution (Step 5)</h3>
               </div>
-              <div class="chart-container" style="height: 200px;">
+              <div class="chart-container" style="height: 220px; position: relative;">
                 <canvas id="statusChart"></canvas>
               </div>
             </div>
@@ -347,96 +380,141 @@
         </section>
 
         <!-- ==========================================
-             LEADS & ENQUIRIES MODULE
+             LEADS & ENQUIRIES MODULE (STEP 1)
              ========================================== -->
         <section id="leads-section" class="module-section hidden">
-          <div class="leads-control-header">
-            <div class="leads-search-box">
-              <i class="fas fa-search"></i>
-              <input type="text" id="leads-search" class="leads-search-input" placeholder="Search leads by name, college, course...">
+          <div class="leads-control-header" style="display: flex; justify-content: space-between; margin-bottom: 24px; gap: 16px;">
+            <div class="leads-search-box" style="flex: 1; position: relative;">
+              <i class="fas fa-search" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+              <input type="text" id="leads-search" class="form-input" placeholder="Search leads by client name, company or location..." style="padding-left: 42px;">
             </div>
-            <button id="leads-shortcut-btn" class="add-lead-btn-shortcut">
-              <i class="fas fa-user-plus"></i>
-              <span>Add New Lead</span>
+            <button onclick="toggleLeadForm()" class="add-lead-btn-shortcut" style="background: var(--accent-purple); color: white; border: none; padding: 12px 20px; border-radius: var(--border-radius-lg); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <i class="fas fa-plus"></i>
+              <span id="btn-toggle-lead-text">Add New Lead</span>
             </button>
           </div>
 
-          <div class="filter-pills-bar">
-            <div class="filter-pill active" data-filter="All">All</div>
-            <div class="filter-pill" data-filter="Hot">Hot 🔥</div>
-            <div class="filter-pill" data-filter="New">New</div>
-            <div class="filter-pill" data-filter="Contacted">Contacted</div>
-            <div class="filter-pill" data-filter="Interested">Interested</div>
-            <div class="filter-pill" data-filter="Not Interested">Not Interested</div>
-            <div class="filter-pill" data-filter="Converted">Converted</div>
+          <div class="filter-pills-bar" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px;">
+            <div class="filter-pill active" onclick="setLeadFilter('All')">All</div>
+            <div class="filter-pill" onclick="setLeadFilter('New')">New</div>
+            <div class="filter-pill" onclick="setLeadFilter('Contacted')">Contacted</div>
+            <div class="filter-pill" onclick="setLeadFilter('Follow-up')">Follow-up</div>
+            <div class="filter-pill" onclick="setLeadFilter('Proposal Sent')">Proposal Sent</div>
+            <div class="filter-pill" onclick="setLeadFilter('Qualified')">Qualified</div>
+            <div class="filter-pill" onclick="setLeadFilter('Rejected')">Rejected</div>
+            <div class="filter-pill" onclick="setLeadFilter('Converted')">Converted</div>
           </div>
 
-          <div id="leads-grid" class="leads-grid-container">
-            <!-- Injected dynamically -->
-          </div>
-        </section>
-
-        <!-- ==========================================
-             ADD LEAD MODULE
-             ========================================== -->
-        <section id="add-lead-section" class="module-section hidden">
-          <div class="form-card">
+          <!-- Add Lead Form Container -->
+          <div id="add-lead-form-container" class="form-card hidden" style="margin-bottom: 32px;">
+            <h3 style="font-size: 16px; margin-bottom: 20px;"><i class="fas fa-user-plus" style="color: var(--accent-purple);"></i> Add New Lead Information</h3>
             <form id="add-lead-form">
-              <div class="form-grid">
+              <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <!-- Lead Summary -->
                 <div class="form-group">
-                  <label for="al-name">Full Name *</label>
+                  <label for="al-name">Client Representative Name *</label>
                   <input type="text" id="al-name" class="form-input" placeholder="e.g. Priya Sharma" style="padding-left: 14px;" required>
                 </div>
                 
                 <div class="form-group">
-                  <label for="al-phone">Phone Number *</label>
+                  <label for="al-designation">Designation</label>
+                  <input type="text" id="al-designation" class="form-input" placeholder="e.g. Managing Director" style="padding-left: 14px;">
+                </div>
+
+                <div class="form-group">
+                  <label for="al-company">Company / Business Name *</label>
+                  <input type="text" id="al-company" class="form-input" placeholder="e.g. Sharma Textiles Ltd" style="padding-left: 14px;" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="al-industry">Business Industry</label>
+                  <select id="al-industry" class="form-select">
+                    <option value="" disabled selected>Select Industry...</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="IT & Tech Services">IT & Tech Services</option>
+                    <option value="Retail & E-commerce">Retail & E-commerce</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Education">Education</option>
+                    <option value="Consulting">Consulting</option>
+                  </select>
+                </div>
+
+                <!-- Business Details -->
+                <div class="form-group">
+                  <label for="al-business-type">Business Type</label>
+                  <select id="al-business-type" class="form-select">
+                    <option value="" disabled selected>Select structure...</option>
+                    <option value="Private Limited">Private Limited (Pvt Ltd)</option>
+                    <option value="LLP">Limited Liability Partnership (LLP)</option>
+                    <option value="Partnership">Partnership Firm</option>
+                    <option value="Proprietorship">Sole Proprietorship</option>
+                    <option value="NGO">NGO/Trust</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="al-employees">No. of Employees</label>
+                  <input type="number" id="al-employees" class="form-input" placeholder="e.g. 25" style="padding-left: 14px;">
+                </div>
+
+                <div class="form-group">
+                  <label for="al-turnover">Annual Turnover</label>
+                  <input type="text" id="al-turnover" class="form-input" placeholder="e.g. $500,000" style="padding-left: 14px;">
+                </div>
+
+                <div class="form-group">
+                  <label for="al-location">Company Location / HQ *</label>
+                  <input type="text" id="al-location" class="form-input" placeholder="e.g. Mumbai, India" style="padding-left: 14px;" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="al-website">Existing Website</label>
+                  <input type="url" id="al-website" class="form-input" placeholder="https://www.example.com" style="padding-left: 14px;">
+                </div>
+
+                <div class="form-group">
+                  <label for="al-social">Social Media Presence</label>
+                  <input type="text" id="al-social" class="form-input" placeholder="LinkedIn, Instagram handles" style="padding-left: 14px;">
+                </div>
+
+                <!-- Contact Details -->
+                <div class="form-group">
+                  <label for="al-phone">Mobile Phone Number *</label>
                   <input type="tel" id="al-phone" class="form-input" placeholder="+91 XXXXX XXXXX" style="padding-left: 14px;" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="al-email">Email Address</label>
-                  <input type="email" id="al-email" class="form-input" placeholder="student@email.com" style="padding-left: 14px;">
+                  <label for="al-whatsapp">WhatsApp Broadcast Number</label>
+                  <input type="tel" id="al-whatsapp" class="form-input" placeholder="+91 XXXXX XXXXX" style="padding-left: 14px;">
                 </div>
 
                 <div class="form-group">
-                  <label for="al-college">College / Institution</label>
-                  <input type="text" id="al-college" class="form-input" placeholder="e.g. Delhi University" style="padding-left: 14px;">
+                  <label for="al-email">Corporate Email ID *</label>
+                  <input type="email" id="al-email" class="form-input" placeholder="representative@company.com" style="padding-left: 14px;" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="al-course">Course Interest *</label>
-                  <select id="al-course" class="form-select" required>
-                    <option value="" disabled selected>Select course...</option>
-                    <option value="Python">Python</option>
-                    <option value="Data Analytics">Data Analytics</option>
-                    <option value="Flutter">Flutter</option>
-                    <option value="AI / Machine Learning">AI / Machine Learning</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="al-source">Lead Source *</label>
-                  <select id="al-source" class="form-select" required>
-                    <option value="" disabled selected>Select source...</option>
-                    <option value="Walk-in">Walk-in</option>
-                    <option value="Phone Call">Phone Call</option>
-                    <option value="WhatsApp">WhatsApp</option>
-                    <option value="Social Media">Social Media</option>
-                    <option value="Referral">Referral</option>
-                    <option value="College Visit">College Visit</option>
+                  <label for="al-source">Lead Source</label>
+                  <select id="al-source" class="form-select">
+                    <option value="Direct Outreach">Direct Outreach</option>
+                    <option value="Organic Search">Organic Search</option>
+                    <option value="LinkedIn Referral">LinkedIn Referral</option>
+                    <option value="WhatsApp Campaign">WhatsApp Campaign</option>
+                    <option value="Website Contact Form">Website Contact Form</option>
+                    <option value="Exhibition/Seminar">Exhibition/Seminar</option>
                   </select>
                 </div>
 
                 <div class="form-group form-grid-full">
-                  <label for="al-notes">Notes / Requirements</label>
-                  <textarea id="al-notes" class="form-textarea" placeholder="Add custom notes here..."></textarea>
+                  <label for="al-notes">Consulting Requirements / Remarks</label>
+                  <textarea id="al-notes" class="form-textarea" placeholder="Enter registration requirements, compliance gaps or custom marketing scope..."></textarea>
                 </div>
 
                 <div class="form-group form-grid-full">
                   <div class="toggle-switch-group">
                     <div class="switch-label-wrap">
-                      <span>Hot Lead 🔥</span>
-                      <p>Mark as high priority for quick callback tracking</p>
+                      <span>Priority Hot Lead 🔥</span>
+                      <p>Mark high conversion potential for instant follow-up</p>
                     </div>
                     <label class="switch">
                       <input type="checkbox" id="al-hot">
@@ -446,289 +524,662 @@
                 </div>
               </div>
 
-              <button type="submit" class="form-submit-btn">
+              <button type="submit" class="form-submit-btn" style="background: var(--accent-purple);">
                 <i class="fas fa-check-circle"></i>
-                <span>Add Lead</span>
+                <span>Register Consulting Lead</span>
               </button>
             </form>
           </div>
-        </section>
 
-        <!-- ==========================================
-             LOG COLLEGE VISIT MODULE
-             ========================================== -->
-        <section id="add-visit-section" class="module-section hidden">
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px;">
-            <div class="form-card" style="margin:0;">
-              <form id="add-visit-form">
-                <div class="form-grid">
-                  <div class="form-group">
-                    <label for="av-college">College Name *</label>
-                    <input type="text" id="av-college" class="form-input" placeholder="e.g. Delhi University" style="padding-left:14px;" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="av-location">Location / Address</label>
-                    <input type="text" id="av-location" class="form-input" placeholder="e.g. North Campus, Delhi" style="padding-left:14px;">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="av-date">Visit Date *</label>
-                    <input type="date" id="av-date" class="form-input" style="padding-left:14px;" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="av-time">Visit Time *</label>
-                    <input type="time" id="av-time" class="form-input" style="padding-left:14px;" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="av-contact">Contact Person Name</label>
-                    <input type="text" id="av-contact" class="form-input" placeholder="e.g. Dr. Anita Rawat" style="padding-left:14px;">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="av-phone">Contact Phone</label>
-                    <input type="tel" id="av-phone" class="form-input" placeholder="+91 XXXXX XXXXX" style="padding-left:14px;">
-                  </div>
-
-                  <div class="form-group form-grid-full">
-                    <label for="av-purpose">Purpose of Visit</label>
-                    <textarea id="av-purpose" class="form-textarea" placeholder="Purpose for visit e.g. Seminar Permissions, Brochure distribution..."></textarea>
-                  </div>
-
-                  <div class="form-group form-grid-full">
-                    <label for="av-outcome">Outcome / Meeting Notes</label>
-                    <textarea id="av-outcome" class="form-textarea" placeholder="Outcome notes..."></textarea>
-                  </div>
-
-                  <div class="form-group form-grid-full">
-                    <div class="toggle-switch-group">
-                      <div class="switch-label-wrap">
-                        <span>Mark as Completed</span>
-                        <p>Toggle off if follow-up meeting is pending approval</p>
-                      </div>
-                      <label class="switch">
-                        <input type="checkbox" id="av-completed" checked>
-                        <span class="slider"></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                <button type="submit" class="form-submit-btn">
-                  <i class="fas fa-save"></i>
-                  <span>Log Visit</span>
-                </button>
-              </form>
-            </div>
-            
-            <div class="dashboard-panel">
-              <div class="panel-header">
-                <h3 class="panel-title"><i class="fas fa-road" style="color:var(--status-contacted);"></i> Logged Visit Logs</h3>
-              </div>
-              <div id="visits-history-list" style="display:flex; flex-direction:column; gap:10px;">
-                <!-- Dynamically filled -->
-              </div>
-            </div>
+          <div id="leads-grid" class="leads-grid-container">
+            <!-- Injected dynamically -->
           </div>
         </section>
 
         <!-- ==========================================
-             SCHEDULE FOLLOW-UP MODULE
+             ACCOUNTS MODULE (STEP 3)
              ========================================== -->
-        <section id="follow-up-section" class="module-section hidden">
-          <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:32px;">
-            <div class="form-card" style="margin:0;">
-              <form id="add-followup-form">
-                <div class="form-grid">
-                  <div class="form-group form-grid-full">
-                    <label for="af-lead-select">Select CRM Lead *</label>
-                    <select id="af-lead-select" class="form-select" required>
-                      <option value="">-- Choose Lead --</option>
-                      <!-- Populated dynamically -->
-                    </select>
-                  </div>
-
-                  <div class="form-group form-grid-full">
-                    <label for="af-phone">Phone Number</label>
-                    <input type="tel" id="af-phone" class="form-input" placeholder="+91 Phone" style="padding-left:14px;" readonly>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="af-date">Follow-up Date *</label>
-                    <input type="date" id="af-date" class="form-input" style="padding-left:14px;" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="af-time">Follow-up Time *</label>
-                    <input type="time" id="af-time" class="form-input" style="padding-left:14px;" required>
-                  </div>
-
-                  <div class="form-group form-grid-full">
-                    <label>Priority *</label>
-                    <div class="priority-selector">
-                      <div class="priority-option">
-                        <input type="radio" id="p-high" name="af-priority" value="HIGH" checked>
-                        <label for="p-high" class="priority-label">High</label>
-                      </div>
-                      <div class="priority-option">
-                        <input type="radio" id="p-med" name="af-priority" value="MEDIUM">
-                        <label for="p-med" class="priority-label">Medium</label>
-                      </div>
-                      <div class="priority-option">
-                        <input type="radio" id="p-low" name="af-priority" value="LOW">
-                        <label for="p-low" class="priority-label">Low</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group form-grid-full">
-                    <label for="af-notes">Reminder Message / Action notes</label>
-                    <textarea id="af-notes" class="form-textarea" placeholder="Remind client details or batch timings..."></textarea>
-                  </div>
-                </div>
-
-                <button type="submit" class="form-submit-btn">
-                  <i class="fas fa-calendar-plus"></i>
-                  <span>Schedule Follow-up</span>
-                </button>
-              </form>
+        <section id="accounts-section" class="module-section hidden">
+          <div class="leads-control-header" style="margin-bottom: 24px;">
+            <div class="leads-search-box" style="position: relative;">
+              <i class="fas fa-search" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+              <input type="text" id="accounts-search" class="form-input" placeholder="Search accounts by company name or industry..." style="padding-left: 42px;">
             </div>
+          </div>
 
-            <div class="dashboard-panel">
-              <div class="panel-header">
-                <h3 class="panel-title"><i class="fas fa-clock" style="color:var(--accent-blue);"></i> Upcoming Schedules</h3>
-              </div>
-              <div id="followups-upcoming-list">
+          <div class="table-card">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Company Account</th>
+                  <th>Industry & Structure</th>
+                  <th>Compliance Vault (GST/PAN)</th>
+                  <th>Address & Location</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="accounts-tbody">
                 <!-- Dynamically filled -->
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
         </section>
 
         <!-- ==========================================
-             CRM TASKS MODULE
+             CONTACTS MODULE (STEP 4)
              ========================================== -->
-        <section id="tasks-section" class="module-section hidden">
+        <section id="contacts-section" class="module-section hidden">
+          <div class="leads-control-header" style="margin-bottom: 24px;">
+            <div class="leads-search-box" style="position: relative;">
+              <i class="fas fa-search" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+              <input type="text" id="contacts-search" class="form-input" placeholder="Search contacts by name, role or company..." style="padding-left: 42px;">
+            </div>
+          </div>
+
+          <div class="table-card">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Contact Person</th>
+                  <th>Company Account</th>
+                  <th>Corporate Role</th>
+                  <th>Communication Channels</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="contacts-tbody">
+                <!-- Dynamically filled -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================
+             DEALS MODULE (STEP 5)
+             ========================================== -->
+        <section id="deals-section" class="module-section hidden">
+          <div class="leads-control-header" style="margin-bottom: 24px;">
+            <div class="leads-search-box" style="position: relative;">
+              <i class="fas fa-search" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+              <input type="text" id="deals-search" class="form-input" placeholder="Search deals by name or owner..." style="padding-left: 42px;">
+            </div>
+          </div>
+
+          <div class="table-card">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Consulting Deal / Opportunity</th>
+                  <th>Linked Company Account</th>
+                  <th>Expected Close Date</th>
+                  <th>Deal Value</th>
+                  <th>Deal Stage & Probability</th>
+                  <th>Operations</th>
+                </tr>
+              </thead>
+              <tbody id="deals-tbody">
+                <!-- Dynamically filled -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================
+             SERVICE REQUIREMENT MODULE (STEP 6)
+             ========================================== -->
+        <section id="service-requirements-section" class="module-section hidden">
+          <p class="text-muted" style="font-size: 13px; margin-bottom: 20px;">Map statutory registrations, compliance requirements, and marketing campaigns for active consultancy accounts.</p>
+          <div id="service-requirements-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 24px;">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+        <!-- ==========================================
+             TASKS & ACTIVITIES MODULE (STEP 7)
+             ========================================== -->
+        <section id="tasks-activities-section" class="module-section hidden">
           <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:32px;">
             <div class="dashboard-panel">
-              <div class="panel-header">
-                <h3 class="panel-title"><i class="fas fa-clipboard-list" style="color:var(--accent-purple);"></i> CRM Task Board</h3>
+              <div class="panel-header" style="margin-bottom: 16px;">
+                <h3 class="panel-title"><i class="fas fa-clipboard-list" style="color:var(--accent-purple);"></i> Shared To-Do Reminders</h3>
               </div>
-              <div id="tasks-board-list">
+              <div id="tasks-board-list" style="margin-bottom: 30px;">
+                <!-- Dynamically filled -->
+              </div>
+
+              <div class="panel-header" style="margin-bottom: 16px;">
+                <h3 class="panel-title"><i class="fas fa-phone-alt" style="color:var(--status-converted);"></i> Logged Activity & Call Feed</h3>
+              </div>
+              <div id="activities-feed-list" style="display:flex; flex-direction:column; gap:12px;">
                 <!-- Dynamically filled -->
               </div>
             </div>
 
-            <div class="form-card" style="margin:0;">
-              <h3 style="font-size: 15px; margin-bottom: 20px;">Create Quick Task</h3>
-              <form id="add-task-form">
-                <div class="form-group">
-                  <label for="task-title-input">Task Title *</label>
-                  <input type="text" id="task-title-input" class="form-input" placeholder="What needs to be done?" style="padding-left:14px;" required>
-                </div>
+            <!-- Form to log details -->
+            <div style="display:flex; flex-direction:column; gap:24px;">
+              <div class="form-card" style="margin:0;">
+                <h3 style="font-size: 14px; margin-bottom: 16px;"><i class="fas fa-plus" style="color:var(--accent-purple);"></i> Add Quick Task</h3>
+                <form id="add-task-form">
+                  <div class="form-group">
+                    <label for="task-title-input">Task Title *</label>
+                    <input type="text" id="task-title-input" class="form-input" placeholder="What needs to be done?" style="padding-left:14px;" required>
+                  </div>
 
-                <div class="form-group">
-                  <label for="task-due-input">Due Date *</label>
-                  <input type="date" id="task-due-input" class="form-input" style="padding-left:14px;" required>
-                </div>
+                  <div class="form-group">
+                    <label for="task-due-input">Due Date *</label>
+                    <input type="date" id="task-due-input" class="form-input" style="padding-left:14px;" required>
+                  </div>
 
-                <div class="form-group">
-                  <label>Priority</label>
-                  <div class="priority-selector">
-                    <div class="priority-option">
-                      <input type="radio" id="pt-high" name="task-priority" value="HIGH" checked>
-                      <label for="pt-high" class="priority-label">High</label>
-                    </div>
-                    <div class="priority-option">
-                      <input type="radio" id="pt-med" name="task-priority" value="MEDIUM">
-                      <label for="pt-med" class="priority-label">Medium</label>
-                    </div>
-                    <div class="priority-option">
-                      <input type="radio" id="pt-low" name="task-priority" value="LOW">
-                      <label for="pt-low" class="priority-label">Low</label>
+                  <div class="form-group">
+                    <label>Task Priority</label>
+                    <div class="priority-selector">
+                      <div class="priority-option">
+                        <input type="radio" id="pt-high" name="task-priority" value="HIGH" checked>
+                        <label for="pt-high" class="priority-label">High</label>
+                      </div>
+                      <div class="priority-option">
+                        <input type="radio" id="pt-med" name="task-priority" value="MEDIUM">
+                        <label for="pt-med" class="priority-label">Medium</label>
+                      </div>
+                      <div class="priority-option">
+                        <input type="radio" id="pt-low" name="task-priority" value="LOW">
+                        <label for="pt-low" class="priority-label">Low</label>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <button type="submit" class="form-submit-btn" style="margin-top:16px;">
-                  <i class="fas fa-plus"></i> Add Task
+                  <button type="submit" class="form-submit-btn" style="margin-top:16px;">
+                    <i class="fas fa-plus"></i> Add task reminder
+                  </button>
+                </form>
+              </div>
+
+              <div class="form-card" style="margin:0;">
+                <h3 style="font-size: 14px; margin-bottom: 16px;"><i class="fas fa-phone-volume" style="color:var(--status-contacted);"></i> Log Call / Meeting / Email</h3>
+                <form id="log-activity-form">
+                  <div class="form-group">
+                    <label for="la-deal">Select Deal/Client *</label>
+                    <select id="la-deal" class="form-select" required>
+                      <!-- Dynamically filled -->
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="la-type">Activity Type *</label>
+                    <select id="la-type" class="form-select" required>
+                      <option value="Call">Call</option>
+                      <option value="Meeting">Meeting</option>
+                      <option value="Email">Email</option>
+                      <option value="WhatsApp Follow-up">WhatsApp Follow-up</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="la-subject">Subject/Title *</label>
+                    <input type="text" id="la-subject" class="form-input" placeholder="e.g. Audit documentation review call" style="padding-left:14px;" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="la-notes">Minutes of Meeting / Outcome Notes</label>
+                    <textarea id="la-notes" class="form-textarea" placeholder="Enter key points discussed..."></textarea>
+                  </div>
+                  <button type="submit" class="form-submit-btn" style="background: var(--status-contacted);">
+                    <i class="fas fa-save"></i> Log Activity details
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================================
+             QUOTES MODULE (STEP 8)
+             ========================================== -->
+        <section id="quotes-section" class="module-section hidden">
+          <div class="leads-control-header" style="display: flex; justify-content: space-between; margin-bottom: 24px; gap: 16px;">
+            <div style="flex: 1;">
+              <p class="text-muted" style="font-size:13px;">Create professional consulting estimates with custom discount tiers and tax mapping.</p>
+            </div>
+            <button onclick="toggleQuoteForm()" class="add-lead-btn-shortcut" style="background: var(--accent-purple); color: white; border: none; padding: 12px 20px; border-radius: var(--border-radius-lg); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <i class="fas fa-plus"></i>
+              <span id="btn-toggle-quote-text">Create Quote</span>
+            </button>
+          </div>
+
+          <div id="add-quote-form-container" class="form-card hidden" style="margin-bottom: 32px;">
+            <h3 style="font-size: 16px; margin-bottom: 20px;"><i class="fas fa-calculator"></i> Build Estimation Quote</h3>
+            <form id="add-quote-form">
+              <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                  <label for="aq-deal">Select Deal / Opportunity *</label>
+                  <select id="aq-deal" class="form-select" required>
+                    <!-- Dynamically populated -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="aq-product">Service Package Details *</label>
+                  <input type="text" id="aq-product" class="form-input" placeholder="e.g. Core Pvt Ltd Incorporation & Annual Compliance" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group">
+                  <label for="aq-price">Standard Professional Fee ($) *</label>
+                  <input type="number" id="aq-price" class="form-input" placeholder="e.g. 5000" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group">
+                  <label for="aq-tax">Applicable Service Tax (%)</label>
+                  <input type="number" id="aq-tax" class="form-input" value="18" placeholder="18" style="padding-left:14px;">
+                </div>
+                <div class="form-group">
+                  <label for="aq-discount">Discounts / Referral Deductions ($)</label>
+                  <input type="number" id="aq-discount" class="form-input" value="0" placeholder="e.g. 500" style="padding-left:14px;">
+                </div>
+              </div>
+              <button type="submit" class="form-submit-btn" style="background: var(--accent-purple); margin-top: 20px;">
+                <i class="fas fa-check-double"></i> Generate estimation quote receipt
+              </button>
+            </form>
+          </div>
+
+          <div class="table-card">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Quote Code</th>
+                  <th>Client Deal / Company</th>
+                  <th>Service Description</th>
+                  <th>Professional Fee</th>
+                  <th>Tax & Discounts</th>
+                  <th>Calculated Total</th>
+                  <th>Quote Operations</th>
+                </tr>
+              </thead>
+              <tbody id="quotes-tbody">
+                <!-- Dynamically filled -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================
+             INVOICES MODULE (STEP 10)
+             ========================================== -->
+        <section id="invoices-section" class="module-section hidden">
+          <div class="leads-control-header" style="display: flex; justify-content: space-between; margin-bottom: 24px; gap: 16px;">
+            <div style="flex: 1;">
+              <p class="text-muted" style="font-size:13px;">Manage corporate billing records. Invoices map outstanding payments for deliverables.</p>
+            </div>
+            <button onclick="toggleInvoiceForm()" class="add-lead-btn-shortcut" style="background: var(--status-contacted); color: white; border: none; padding: 12px 20px; border-radius: var(--border-radius-lg); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <i class="fas fa-plus"></i>
+              <span id="btn-toggle-invoice-text">Create Invoice</span>
+            </button>
+          </div>
+
+          <div id="add-invoice-form-container" class="form-card hidden" style="margin-bottom: 32px;">
+            <h3 style="font-size: 16px; margin-bottom: 20px;"><i class="fas fa-file-invoice"></i> Issue Corporate Invoice</h3>
+            <form id="add-invoice-form">
+              <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                  <label for="ai-deal">Choose Active Deal / Account *</label>
+                  <select id="ai-deal" class="form-select" required>
+                    <!-- Dynamically populated -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="ai-amount">Invoice Total Billing Amount ($) *</label>
+                  <input type="number" id="ai-amount" class="form-input" placeholder="e.g. 5310" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group">
+                  <label for="ai-date">Invoice Creation Date *</label>
+                  <input type="date" id="ai-date" class="form-input" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group">
+                  <label for="ai-due">Due Date for Settlement *</label>
+                  <input type="date" id="ai-due" class="form-input" style="padding-left:14px;" required>
+                </div>
+              </div>
+              <button type="submit" class="form-submit-btn" style="background: var(--status-contacted); margin-top: 20px;">
+                <i class="fas fa-envelope-open-text"></i> Generate & Issue Invoice
+              </button>
+            </form>
+          </div>
+
+          <div class="table-card">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Invoice No</th>
+                  <th>Target Client / Deal</th>
+                  <th>Issuance Date</th>
+                  <th>Due Date</th>
+                  <th>Outstanding Amount</th>
+                  <th>Status</th>
+                  <th>Invoice Actions</th>
+                </tr>
+              </thead>
+              <tbody id="invoices-tbody">
+                <!-- Dynamically filled -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================
+             PAYMENTS MODULE (STEP 11)
+             ========================================== -->
+        <section id="payments-section" class="module-section hidden">
+          <div class="leads-control-header" style="display: flex; justify-content: space-between; margin-bottom: 24px; gap: 16px;">
+            <div style="flex: 1;">
+              <p class="text-muted" style="font-size:13px;">Log bank payments, UPI receipts, card deposits and transaction UTR codes against issued invoices.</p>
+            </div>
+            <button onclick="togglePaymentForm()" class="add-lead-btn-shortcut" style="background: var(--status-converted); color: white; border: none; padding: 12px 20px; border-radius: var(--border-radius-lg); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <i class="fas fa-receipt"></i>
+              <span id="btn-toggle-payment-text">Log Payment Received</span>
+            </button>
+          </div>
+
+          <div id="add-payment-form-container" class="form-card hidden" style="margin-bottom: 32px;">
+            <h3 style="font-size: 16px; margin-bottom: 20px;"><i class="fas fa-dollar-sign"></i> Log Financial Deposit</h3>
+            <form id="add-payment-form">
+              <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                  <label for="ap-invoice">Choose Issued Invoice *</label>
+                  <select id="ap-invoice" class="form-select" required>
+                    <!-- Dynamically populated -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="ap-amount">Payment Amount Received ($) *</label>
+                  <input type="number" id="ap-amount" class="form-input" placeholder="e.g. 2500" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group">
+                  <label for="ap-mode">Payment Transfer Mode *</label>
+                  <select id="ap-mode" class="form-select" required>
+                    <option value="Bank Wire / IMPS">Bank Wire / IMPS</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="UPI Deposit">UPI Deposit</option>
+                    <option value="Corporate Check">Corporate Check</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="ap-utr">Transaction Reference ID / UTR Code *</label>
+                  <input type="text" id="ap-utr" class="form-input" placeholder="e.g. Bank Ref / TXN103290" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group form-grid-full">
+                  <label for="ap-remarks">Remarks</label>
+                  <input type="text" id="ap-remarks" class="form-input" placeholder="e.g. Initial advance payment" style="padding-left:14px;">
+                </div>
+              </div>
+              <button type="submit" class="form-submit-btn" style="background: var(--status-converted); margin-top: 20px;">
+                <i class="fas fa-check-circle"></i> Complete Payment Entry
+              </button>
+            </form>
+          </div>
+
+          <div class="table-card">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Receipt Code</th>
+                  <th>Linked Invoice</th>
+                  <th>Client Account</th>
+                  <th>Payment Date</th>
+                  <th>Method & UTR Code</th>
+                  <th>Amount Deposited</th>
+                  <th>Receipt Notes</th>
+                </tr>
+              </thead>
+              <tbody id="payments-tbody">
+                <!-- Dynamically filled -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================
+             SERVICE DELIVERY MODULE (STEP 12)
+             ========================================== -->
+        <section id="service-delivery-section" class="module-section hidden">
+          <p class="text-muted" style="font-size:13px; margin-bottom: 20px;">Assign team representatives and compile statutory certificates, filings, and draft delivery reports.</p>
+          
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
+            <div id="deliveries-management-list" style="display:flex; flex-direction:column; gap:16px;">
+              <!-- Dynamically populated -->
+            </div>
+
+            <!-- Upload deliverables simulation -->
+            <div class="form-card" style="margin:0;">
+              <h3 style="font-size: 16px; margin-bottom: 20px;"><i class="fas fa-upload"></i> Deliverables Vault</h3>
+              <form id="upload-deliverable-form">
+                <div class="form-group">
+                  <label for="ud-deal">Select Client Account / Deal *</label>
+                  <select id="ud-deal" class="form-select" required>
+                    <!-- Dynamically populated -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="ud-type">Document Type *</label>
+                  <select id="ud-type" class="form-select" required>
+                    <option value="Incorporation Certificate">Incorporation Certificate</option>
+                    <option value="GST Registration Certificate">GST Registration Certificate</option>
+                    <option value="Audit Compliance Report">Audit Compliance Report</option>
+                    <option value="Income Tax Return Receipt">Income Tax Return Receipt</option>
+                    <option value="Marketing Campaign Analytics">Marketing Campaign Analytics</option>
+                    <option value="Project Deliverable File">Project Deliverable File</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="ud-file">Upload Document File *</label>
+                  <input type="text" id="ud-file" class="form-input" placeholder="e.g. incorporation_receipt.pdf" style="padding-left:14px;" required>
+                </div>
+                <button type="submit" class="form-submit-btn" style="background: var(--accent-purple);">
+                  <i class="fas fa-cloud-upload-alt"></i> Upload to Client Vault
                 </button>
               </form>
+
+              <div class="vault-files-box" style="margin-top: 30px; border-top: 1px solid var(--glass-border); padding-top: 20px;">
+                <h4 style="font-size: 14px; margin-bottom: 12px; color: var(--text-muted);">Recent Uploaded Document Vault</h4>
+                <div id="vault-documents-list" style="display:flex; flex-direction:column; gap:8px;">
+                  <!-- Dynamically filled -->
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- ==========================================
-             WHATSAPP CAMPAIGN MODULE
+             CUSTOMER SUPPORT MODULE (STEP 13)
              ========================================== -->
-        <section id="whatsapp-section" class="module-section hidden">
-          <div class="campaign-layout">
-            <div class="form-card" style="margin:0; width:100%; max-width:100%;">
-              <h3 style="font-size:16px; margin-bottom:16px;">Broadcast Message Customizer</h3>
-              
-              <div class="form-group">
-                <label for="campaign-filter">Select Lead Filter Group</label>
-                <select id="campaign-filter" class="form-select">
-                  <option value="All">All CRM Leads</option>
-                  <option value="Hot Only">Hot Only (High Priority)</option>
-                  <option value="Contacted">Contacted status only</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label style="display:flex; justify-content:space-between; width:100%;">
-                  <span>Target Recipients List</span>
-                  <label style="font-size:11px; text-transform:none; font-weight:normal; display:flex; align-items:center; gap:4px; cursor:pointer;">
-                    <input type="checkbox" id="campaign-select-all" checked> Select All
-                  </label>
-                </label>
-                <div id="whatsapp-leads-container" class="campaign-leads-list">
-                  <!-- Dynamically populated -->
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="campaign-msg-template">Template Message Body</label>
-                <textarea id="campaign-msg-template" class="form-textarea" style="height: 120px; font-family: monospace; font-size:13px;"></textarea>
-                <div style="font-size:11px; color:var(--text-muted); margin-top:6px;">
-                  Use tag <code>{Name}</code> to inject client name dynamically. Bold formatting with *asterisks* (e.g. *FREE demo*).
-                </div>
-              </div>
-
-              <button id="whatsapp-send-btn" class="form-submit-btn" style="margin-top:10px;">
-                <i class="fab fa-whatsapp"></i> Send to 0 Leads
-              </button>
+        <section id="support-section" class="module-section hidden">
+          <div class="leads-control-header" style="display: flex; justify-content: space-between; margin-bottom: 24px; gap: 16px;">
+            <div style="flex: 1;">
+              <p class="text-muted" style="font-size:13px;">Manage customer tickets, post-incorporation support and resolution times.</p>
             </div>
+            <button onclick="toggleSupportForm()" class="add-lead-btn-shortcut" style="background: #ef4444; color: white; border: none; padding: 12px 20px; border-radius: var(--border-radius-lg); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <i class="fas fa-plus"></i>
+              <span id="btn-toggle-support-text">Open Support Ticket</span>
+            </button>
+          </div>
 
-            <!-- Realistic Phone Mockup Preview -->
-            <div class="campaign-preview-container">
-              <div class="phone-mockup">
-                <div class="phone-screen">
-                  <div class="phone-header">
-                    <span class="phone-back-arrow"><i class="fas fa-chevron-left"></i></span>
-                    <div class="phone-header-avatar">
-                      <i class="fas fa-user-circle"></i>
+          <div id="add-support-form-container" class="form-card hidden" style="margin-bottom: 32px;">
+            <h3 style="font-size: 16px; margin-bottom: 20px;"><i class="fas fa-life-ring"></i> Raise Support Case</h3>
+            <form id="add-support-form">
+              <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                  <label for="as-account">Choose Company Account *</label>
+                  <select id="as-account" class="form-select" required>
+                    <!-- Dynamically populated -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="as-type">Complaint / Support Type *</label>
+                  <select id="as-type" class="form-select" required>
+                    <option value="Billing Inquiries">Billing Inquiries</option>
+                    <option value="Registration delay">Registration delay</option>
+                    <option value="Tax Compliance Filing query">Tax Compliance Filing query</option>
+                    <option value="Marketing Campaign Changes">Marketing Campaign Changes</option>
+                    <option value="Portal Login Error">Portal Login Error</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="as-priority">Severity Level *</label>
+                  <select id="as-priority" class="form-select" required>
+                    <option value="HIGH">High (SLA: 4 hours)</option>
+                    <option value="MEDIUM">Medium (SLA: 24 hours)</option>
+                    <option value="LOW">Low (SLA: 48 hours)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="as-exec">Assigned Executive *</label>
+                  <select id="as-exec" class="form-select" required>
+                    <!-- Staff names populate here -->
+                  </select>
+                </div>
+                <div class="form-group form-grid-full">
+                  <label for="as-notes">Complaint Description</label>
+                  <textarea id="as-notes" class="form-textarea" placeholder="Explain the support ticket requirements..." required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="form-submit-btn" style="background: #ef4444; margin-top: 20px;">
+                <i class="fas fa-ticket-alt"></i> Register Ticket
+              </button>
+            </form>
+          </div>
+
+          <div class="table-card">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Ticket No</th>
+                  <th>Client Company</th>
+                  <th>Issue Category</th>
+                  <th>Priority</th>
+                  <th>Ticket Status</th>
+                  <th>Assigned Executive</th>
+                  <th>Resolution Status</th>
+                </tr>
+              </thead>
+              <tbody id="tickets-tbody">
+                <!-- Dynamically filled -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================
+             REPORTS & DASHBOARD MODULE (STEP 14)
+             ========================================== -->
+        <section id="reports-section" class="module-section hidden">
+          <div class="filter-pills-bar" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px;">
+            <div class="filter-pill active" id="pill-rep-leads" onclick="showReportSubTab('leads')"><i class="fas fa-user-friends"></i> Lead Reports</div>
+            <div class="filter-pill" id="pill-rep-deals" onclick="showReportSubTab('deals')"><i class="fas fa-handshake"></i> Deal Reports</div>
+            <div class="filter-pill" id="pill-rep-revenue" onclick="showReportSubTab('revenue')"><i class="fas fa-dollar-sign"></i> Revenue Reports</div>
+            <div class="filter-pill" id="pill-rep-activities" onclick="showReportSubTab('activities')"><i class="fas fa-calendar-check"></i> Activity Reports</div>
+            <div class="filter-pill" id="pill-rep-employee" onclick="showReportSubTab('employee')"><i class="fas fa-user-shield"></i> Employee Reports</div>
+          </div>
+
+          <!-- 1. Lead Reports Sub-tab -->
+          <div id="rep-subtab-leads" class="report-subtab-content">
+            <div class="dashboard-grid">
+              <div class="dashboard-panel">
+                <h3 class="panel-title"><i class="fas fa-pie-chart"></i> Lead Source Breakdown</h3>
+                <div class="chart-container" style="height: 250px; position: relative;">
+                  <canvas id="chart-rep-lead-source"></canvas>
+                </div>
+              </div>
+              <div class="dashboard-panel">
+                <h3 class="panel-title">Lead Conversion Metrics</h3>
+                <div class="metrics-grid" style="grid-template-columns: 1fr; gap: 16px; margin-top: 20px;">
+                  <div class="metric-card" style="padding: 16px;">
+                    <div>
+                      <div class="metric-label">Total Registered Leads</div>
+                      <div id="rep-lead-total" class="metric-value">12</div>
                     </div>
-                    <div class="phone-header-title">
-                      <h4 id="phone-contact-name">Priya Sharma</h4>
-                      <p>online</p>
-                    </div>
-                    <span style="font-size:14px;"><i class="fas fa-ellipsis-v"></i></span>
                   </div>
-                  
-                  <div class="phone-body">
-                    <div id="whatsapp-preview-bubble" class="whatsapp-bubble">
-                      <!-- Injected via JS -->
+                  <div class="metric-card" style="padding: 16px;">
+                    <div>
+                      <div class="metric-label">Converted to Accounts</div>
+                      <div id="rep-lead-converted" class="metric-value">6</div>
                     </div>
                   </div>
-                  
-                  <div class="phone-footer">
-                    <span style="font-size:14px; color:#6b7280; padding:4px;"><i class="far fa-smile"></i></span>
-                    <input type="text" class="phone-input" value="Type a message" disabled>
-                    <span class="phone-send-btn"><i class="fas fa-microphone"></i></span>
+                  <div class="metric-card" style="padding: 16px;">
+                    <div>
+                      <div class="metric-label">Lead-to-Deal Conversion Rate</div>
+                      <div id="rep-lead-rate" class="metric-value">50.0%</div>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Deal Reports Sub-tab -->
+          <div id="rep-subtab-deals" class="report-subtab-content hidden">
+            <div class="dashboard-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="dashboard-panel">
+                <h3 class="panel-title"><i class="fas fa-handshake"></i> Open vs Won vs Lost Deals</h3>
+                <div class="chart-container" style="height: 250px; position: relative;">
+                  <canvas id="chart-rep-deal-status"></canvas>
+                </div>
+              </div>
+              <div class="dashboard-panel">
+                <h3 class="panel-title">Sales Pipeline Value</h3>
+                <div class="metrics-grid" style="grid-template-columns: 1fr; gap: 16px; margin-top: 20px;">
+                  <div class="metric-card" style="padding: 16px;">
+                    <div>
+                      <div class="metric-label">Deal Pipeline Strength</div>
+                      <div id="rep-deal-pipeline" class="metric-value">$145,000</div>
+                    </div>
+                  </div>
+                  <div class="metric-card" style="padding: 16px;">
+                    <div>
+                      <div class="metric-label">Average Deal Value</div>
+                      <div id="rep-deal-average" class="metric-value">$12,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Revenue Reports Sub-tab -->
+          <div id="rep-subtab-revenue" class="report-subtab-content hidden">
+            <div class="dashboard-grid" style="grid-template-columns: 1.5fr 1fr;">
+              <div class="dashboard-panel">
+                <h3 class="panel-title"><i class="fas fa-chart-line"></i> Revenue Billings Collection</h3>
+                <div class="chart-container" style="height: 250px; position: relative;">
+                  <canvas id="chart-rep-revenue-months"></canvas>
+                </div>
+              </div>
+              <div class="dashboard-panel">
+                <h3 class="panel-title">Pending Collection & Receivables</h3>
+                <div id="rep-pending-billing-list" style="display:flex; flex-direction:column; gap:10px; margin-top: 10px;">
+                  <!-- Injected dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Activity Reports Sub-tab -->
+          <div id="rep-subtab-activities" class="report-subtab-content hidden">
+            <div class="dashboard-grid" style="grid-template-columns: 1fr;">
+              <div class="dashboard-panel">
+                <h3 class="panel-title"><i class="fas fa-phone"></i> Consulting Activities Logs</h3>
+                <div class="chart-container" style="height: 250px; position: relative;">
+                  <canvas id="chart-rep-activity"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Employee Reports Sub-tab -->
+          <div id="rep-subtab-employee" class="report-subtab-content hidden">
+            <div class="dashboard-grid" style="grid-template-columns: 1.5fr 1fr;">
+              <div class="dashboard-panel">
+                <h3 class="panel-title"><i class="fas fa-users-cog"></i> Employee Operations & Task Completion</h3>
+                <div class="chart-container" style="height: 250px; position: relative;">
+                  <canvas id="chart-rep-employee-tasks"></canvas>
+                </div>
+              </div>
+              <div class="dashboard-panel">
+                <h3 class="panel-title">Staff Activity Leaderboard</h3>
+                <div id="rep-staff-leaderboard" style="display:flex; flex-direction:column; gap:10px; margin-top: 10px;">
+                  <!-- Injected dynamically -->
                 </div>
               </div>
             </div>
@@ -736,10 +1187,10 @@
         </section>
 
         <!-- ==========================================
-             ADMIN PANEL MODULE
+             SYSTEM USERS MODULE (ADMIN)
              ========================================== -->
         <section id="admin-section" class="module-section hidden">
-          <div class="admin-stats">
+          <div class="admin-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 32px;">
             <div class="metric-card">
               <div>
                 <div class="metric-label">Total Staff</div>
@@ -752,7 +1203,7 @@
 
             <div class="metric-card">
               <div>
-                <div class="metric-label">Active Roles</div>
+                <div class="metric-label">Active Portals</div>
                 <div id="admin-metric-active" class="metric-value">5</div>
               </div>
               <div class="metric-icon" style="background:rgba(16, 185, 129, 0.15); color:var(--status-converted);">
@@ -762,7 +1213,7 @@
 
             <div class="metric-card">
               <div>
-                <div class="metric-label">Offline / Inactive</div>
+                <div class="metric-label">Offline / Suspended</div>
                 <div id="admin-metric-offline" class="metric-value">1</div>
               </div>
               <div class="metric-icon" style="background:rgba(239, 68, 68, 0.15); color:#ef4444;">
@@ -774,7 +1225,7 @@
           <div class="table-card">
             <div class="panel-header">
               <h3 class="panel-title"><i class="fas fa-users-cog" style="color:var(--accent-purple);"></i> Portal Users & Access Control</h3>
-              <button id="admin-add-user-btn" class="add-lead-btn-shortcut">
+              <button id="admin-add-user-btn" class="add-lead-btn-shortcut" style="background: var(--accent-purple); color: white; border: none; padding: 10px 16px; border-radius: var(--border-radius-md); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
                 <i class="fas fa-plus"></i> Add New User
               </button>
             </div>
@@ -807,7 +1258,7 @@
     <div class="modal-card">
       <div class="modal-header">
         <h3 id="details-lead-name" style="font-size:18px;">Client Details</h3>
-        <button class="modal-close-btn"><i class="fas fa-times"></i></button>
+        <button class="modal-close-btn" onclick="closeDetailsModal()"><i class="fas fa-times"></i></button>
       </div>
       <div id="details-modal-list" class="details-list">
         <!-- Dynamically injected -->
@@ -820,16 +1271,17 @@
     <div class="modal-card" style="max-width: 400px;">
       <div class="modal-header">
         <h3 style="font-size:16px;">Update Lead Status</h3>
-        <button class="modal-close-btn"><i class="fas fa-times"></i></button>
+        <button class="modal-close-btn" onclick="closeStatusModal()"><i class="fas fa-times"></i></button>
       </div>
       <div class="form-group" style="margin-bottom:24px;">
         <label for="status-select-input">Lead: <strong id="status-lead-name" style="color:var(--text-main); font-weight:700;">Name</strong></label>
         <select id="status-select-input" class="form-select" style="margin-top:12px;">
           <option value="New">New</option>
           <option value="Contacted">Contacted</option>
-          <option value="Interested">Interested</option>
-          <option value="Converted">Converted</option>
-          <option value="Not Interested">Not Interested</option>
+          <option value="Follow-up">Follow-up</option>
+          <option value="Proposal Sent">Proposal Sent</option>
+          <option value="Qualified">Qualified</option>
+          <option value="Rejected">Rejected</option>
         </select>
       </div>
       <button id="status-save-btn" class="form-submit-btn">
@@ -846,7 +1298,7 @@
           <i class="fas fa-phone-volume" style="color:var(--status-converted); animation: pulse 1.5s infinite;"></i>
           Simulate Call Log
         </h3>
-        <button class="modal-close-btn"><i class="fas fa-times"></i></button>
+        <button class="modal-close-btn" onclick="closeDialerModal()"><i class="fas fa-times"></i></button>
       </div>
       <div style="text-align:center; padding:16px 0 24px 0;">
         <h4 id="dialer-lead-name" style="font-size:20px; margin-bottom:4px;">Priya Sharma</h4>
@@ -855,8 +1307,8 @@
       </div>
       
       <div class="form-group">
-        <label for="dialer-outcome">Call Notes / Outcome of discussion</label>
-        <textarea id="dialer-outcome" class="form-textarea" placeholder="Explain the discussion outcome (e.g. Inquired about batches, will visit tomorrow)"></textarea>
+        <label for="dialer-outcome">Call Notes / Discussion Outcome</label>
+        <textarea id="dialer-outcome" class="form-textarea" placeholder="Explain the discussion outcome..."></textarea>
       </div>
 
       <button id="dialer-save-btn" class="form-submit-btn" style="background:var(--status-converted); box-shadow:0 0 10px rgba(16,185,129,0.3);">
@@ -865,12 +1317,115 @@
     </div>
   </div>
 
-  <!-- 4. Admin Register New User Modal -->
+  <!-- 4. Lead Convert Modal (STEP 2: Lead -> Account + Contact + Deal) -->
+  <div id="convert-lead-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 820px; width: 95%;">
+      <div class="modal-header">
+        <h3 style="font-size:18px; display:flex; align-items:center; gap:8px;">
+          <i class="fas fa-random" style="color: var(--accent-blue);"></i> Convert Lead: Step 2
+        </h3>
+        <button class="modal-close-btn" onclick="closeConvertModal()"><i class="fas fa-times"></i></button>
+      </div>
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px;">Converting this lead automatically registers a Company Account, creates a primary Contact person, and initializes an active Deal Opportunity.</p>
+      
+      <form id="convert-lead-form">
+        <input type="hidden" id="convert-lead-id">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px;">
+          
+          <!-- Left Column: Account Details -->
+          <div style="border-right: 1px solid var(--glass-border); padding-right: 24px;">
+            <h4 style="font-size:14px; margin-bottom:12px; color: var(--accent-purple); font-weight:700;"><i class="fas fa-city"></i> Company Account Details</h4>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="cl-company">Company Name</label>
+                <input type="text" id="cl-company" class="form-input" style="padding-left:14px;" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="cl-structure">Business Structure</label>
+                <input type="text" id="cl-structure" class="form-input" style="padding-left:14px;">
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="cl-gst">GST Number (15-digit)</label>
+                <input type="text" id="cl-gst" class="form-input" placeholder="e.g. 27AAAAA1111A1Z1" style="padding-left:14px;" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="cl-pancin">PAN / CIN Code</label>
+                <input type="text" id="cl-pancin" class="form-input" placeholder="e.g. U74999DL2018PTC111111" style="padding-left:14px;" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact & Deal Details -->
+          <div style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="font-size:14px; margin-bottom:12px; color: var(--accent-blue); font-weight:700;"><i class="fas fa-address-book"></i> Primary Contact Person</h4>
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+                <div class="form-group" style="margin-bottom:0;">
+                  <label for="cl-contact">Contact Name</label>
+                  <input type="text" id="cl-contact" class="form-input" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label for="cl-role">Role</label>
+                  <input type="text" id="cl-role" class="form-input" style="padding-left:14px;">
+                </div>
+              </div>
+
+              <h4 style="font-size:14px; margin-bottom:12px; color: var(--status-contacted); font-weight:700;"><i class="fas fa-handshake"></i> Active Deal (Opportunity)</h4>
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+                <div class="form-group" style="margin-bottom:0; grid-column: span 2;">
+                  <label for="cl-dealname">Deal Project Name *</label>
+                  <input type="text" id="cl-dealname" class="form-input" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label for="cl-dealvalue">Deal Value ($) *</label>
+                  <input type="number" id="cl-dealvalue" class="form-input" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label for="cl-date">Close Date *</label>
+                  <input type="date" id="cl-date" class="form-input" style="padding-left:14px;" required>
+                </div>
+                <div class="form-group" style="margin-bottom:0; grid-column: span 2;">
+                  <label for="cl-owner">Deal Owner</label>
+                  <select id="cl-owner" class="form-select">
+                    <!-- Staff names load dynamically -->
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit-btn" style="background: var(--accent-blue); margin-top:20px; padding: 12px;">
+              <i class="fas fa-random"></i> Convert Lead & Create Entities
+            </button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 5. Quote Preview Modal (STEP 8: formal printable estimate) -->
+  <div id="quote-preview-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 650px; padding: 40px; background: white; color: #1e293b; border-radius: var(--border-radius-xl);">
+      <div class="modal-header" style="border-bottom: 2px solid #e2e8f0; padding-bottom:15px; margin-bottom: 20px; color: #0f172a;">
+        <h3 style="font-size: 20px; display:flex; align-items:center; gap:8px;"><i class="fas fa-file-invoice" style="color: #6366f1;"></i> Estimation Proposal</h3>
+        <button class="modal-close-btn" onclick="closeQuotePreviewModal()" style="color: #64748b;"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="quote-receipt-area" style="font-family: inherit;">
+        <!-- Injected dynamically via JS -->
+      </div>
+      <div style="margin-top: 30px; display:flex; justify-content:flex-end; gap:12px; border-top:1px solid #e2e8f0; padding-top:20px;">
+        <button onclick="showToast('Quote PDF download simulation started.', 'success')" class="form-submit-btn" style="background:#475569; width:auto; padding: 10px 16px;"><i class="fas fa-download"></i> PDF</button>
+        <button onclick="simulateWhatsAppShare()" class="form-submit-btn" style="background:#16a34a; width:auto; padding: 10px 16px;"><i class="fab fa-whatsapp"></i> Share</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Admin Register New User Modal -->
   <div id="admin-modal" class="modal-overlay">
     <div class="modal-card" style="max-width: 480px;">
       <div class="modal-header">
         <h3 style="font-size:18px;">Register Staff Member</h3>
-        <button class="modal-close-btn"><i class="fas fa-times"></i></button>
+        <button class="modal-close-btn" onclick="closeAdminModal()"><i class="fas fa-times"></i></button>
       </div>
       <form id="admin-add-user-form">
         <div class="form-group">
@@ -879,7 +1434,7 @@
         </div>
         <div class="form-group">
           <label for="au-email">Email Address *</label>
-          <input type="email" id="au-email" class="form-input" placeholder="sonia@acadeno.com" style="padding-left:14px;" required>
+          <input type="email" id="au-email" class="form-input" placeholder="sonia@consultancy.com" style="padding-left:14px;" required>
         </div>
         <div class="form-group">
           <label for="au-role">Corporate Role *</label>
